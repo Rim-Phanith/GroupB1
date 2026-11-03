@@ -1,0 +1,18 @@
+name: GroupB1
+
+services:
+  admin:
+    build: 
+      context: ./admin
+      dockerfile: Dockerfile
+    container_name: GroupB1_admin_Sithuon1292
+    ports:
+      - "9005:80"
+
+  client:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: GroupB1_client_Sithuon1292
+    ports:
+      - "9006:80"
